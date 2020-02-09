@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Arsenii Lyzenko</title>
     <meta name="description" content="Arsenii Lyzenko Portfolio">
     <meta name="keywords"
@@ -9,27 +10,63 @@
     <meta name="author" content="Arsenii Lyzenko">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script defer src="bundle.js"></script>
+<!--    <style>-->
+<!--      .step {-->
+<!--        width: min(100vw, 100vh);-->
+<!--        height: min(100vw, 100vh);-->
+<!--      }-->
+<!--    </style>-->
   </head>
 
   <body class="impress-not-supported">
 
     <div class="fallback-message">
-      <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+      <p>Your browser <b>doesn't support the features required</b> by this portfolio, so you are presented with a simplified version.</p>
       <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
 
-    <div id="impress" data-perspective="1">
-      <div class="step">
-        <p>Hi, I'm Arsenii Lyzenko</p>
+    <div id="impress" data-perspective="0">
+
+      <div class="step" data-x="0" data-y="0" data-z="350">
+        <p>Hi, I'm <span class="amplified">Arsenii Lyzenko</span></p>
       </div>
-      <div class="step" data-x="1000">
-        <p>..and I like create things</p>
+
+      <div class="step slide-2" data-x="350" data-y="0" data-z="0" data-rotate-y="90">
+        <p>I like create <br> <span class="amplified">Web Applications</span> <br> and <br> <span class="amplified">Websites</span></p>
       </div>
-      <div class="step" data-x="0" data-y="1000" data-scale="4">
-        <p>like Web Applications and Websites</p>
+
+      <div class="step" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90">
+        <p>(skills)</p>
+      </div>
+
+      <div class="step" data-x="0" data-y="-350" data-z="0" data-rotate-x="90" data-rotate-z="-90">
+        <p>(Education)</p>
+        <p>Two blocks [ ] [ ]</p>
+      </div>
+
+      <div class="step" data-x="-350" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180">
+        <p>(Experience)</p>
+      </div>
+
+      <div class="step" data-x="0" data-y="0" data-z="-350" data-rotate-y="-180" data-rotate-z="-180">
+        <p>(Projects) and links?</p>
+      </div>
+
+      <div id="overview" class="step contacts" data-x="1500" data-y="500" data-z="0" data-scale="5">
+        <a target="_blank" rel="noopener noreferrer" href="mailto:arseniismart@gmail.com">
+          <img src="at-solid.svg" alt="Email" width="100" height="100">
+<!--          <object data="at-solid.svg" type="image/svg+xml"></object>-->
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/PticaGovorun">
+          <img src="github-brands.svg" alt="GitHub" width="100" height="100">
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arseniilyzenko">
+          <img src="linkedin-brands.svg" alt="LinkedIn" width="100" height="100">
+        </a>
       </div>
     </div>
 
-    <script src="bundle.js"></script>
+    <div class="hint"></div>
   </body>
 </html>
