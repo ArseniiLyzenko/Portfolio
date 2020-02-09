@@ -349,6 +349,7 @@
                     rootData.transitionDuration, defaults.transitionDuration
                 )
             };
+            debugger
 
             windowScale = computeWindowScale( config );
 

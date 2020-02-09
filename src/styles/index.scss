@@ -1,7 +1,62 @@
 @import "~normalize-scss/sass/normalize/import-now";
 
+html, body {
+  background: black;
+
+  font-family: 'trebuchet ms', verdana, arial;
+  color: #898989;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@import "hint";
+
 .impress-supported {
   .fallback-message {
     display: none;
   }
 }
+
+.impress-enabled {
+  .step > * {
+    transition: opacity 1s;
+    text-align: center;
+  }
+
+  .step:not(.active) > * {
+    opacity: 0;
+  }
+
+  .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.3;
+    transition: opacity 1s;
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .step:not(#overview) {
+    //background: #313131;
+  }
+
+  .step.active {
+    opacity: 1;
+  }
+
+  .amplified {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+@import "slide-2";
+
+@import "contacts";

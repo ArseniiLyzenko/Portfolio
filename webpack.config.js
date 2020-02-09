@@ -1,14 +1,16 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: ["./src/libraries/impress.js", "./src/index.js"],
-  mode: "development",
+  mode: 'development',
   devServer: {
     contentBase: "./dist"
   },
   plugins: [
     new MiniCssExtractPlugin(),
+    new CleanWebpackPlugin(),
   ],
   output: {
     filename: "bundle.js",
@@ -36,8 +38,24 @@ module.exports = {
           "postcss-loader",
           // Compiles Sass to CSS
           "sass-loader"
-        ]
-      }
-    ]
-  }
+        ],
+      },
+      {
+        test: /\.(png|svg|jpg|gif|html)$/i,
+        // test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          },
+        ],
+      },
+      // {
+      //   test: /\.html$/i,
+      //   use: ['html-loader?root=index.html', 'svg-inline-loader'],
+      // },
+    ],
+  },
 };
