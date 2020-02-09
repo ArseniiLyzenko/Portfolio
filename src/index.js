@@ -10,10 +10,10 @@ import './icons/linkedin-brands.svg';
 
 import './scripts/hint';
 
-const impress_DOM_elemnt = document.getElementById('impress');
+const impress_DOM_element = document.getElementById('impress');
 
-impress_DOM_elemnt.dataset.height = window.innerHeight;
-impress_DOM_elemnt.dataset.width = window.innerWidth;
+impress_DOM_element.dataset.height = window.innerHeight;
+impress_DOM_element.dataset.width = window.innerWidth;
 
 impress().init();
 
