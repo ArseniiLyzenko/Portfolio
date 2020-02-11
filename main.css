@@ -409,7 +409,7 @@ template {
 html, body {
   background: black;
   font-family: 'trebuchet ms', verdana, arial;
-  color: #898989; }
+  color: #acacac; }
   html a, body a {
     color: white;
     text-decoration: none; }
@@ -513,10 +513,9 @@ html, body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0.3;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  width: 100vw;
-  height: 100vh;
   font-size: 1.5rem; }
 
 .impress-enabled .step.active {
@@ -530,9 +529,178 @@ html, body {
 .impress-enabled .slide-2 {
   line-height: 3; }
 
+.impress-enabled .skills-slide {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem; }
+  .impress-enabled .skills-slide .skill-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .impress-enabled .skills-slide .skill-container .title {
+      margin-bottom: 0; }
+    .impress-enabled .skills-slide .skill-container .details {
+      margin: 5px 0 0 0; }
+    .impress-enabled .skills-slide .skill-container .skill-bar-container {
+      width: 300px;
+      height: 12px;
+      margin: 10px 0 0 0;
+      border: 1px solid white;
+      border-radius: 3px; }
+      .impress-enabled .skills-slide .skill-container .skill-bar-container .skill-bar-filler {
+        background-color: #ffffff;
+        height: 100%; }
+
+.impress-enabled .js {
+  width: 95%; }
+
+.impress-enabled .html-css {
+  width: 95%; }
+
+.impress-enabled .dev-env {
+  width: 80%; }
+
+.impress-enabled .client-server {
+  width: 80%; }
+
+.impress-enabled .back-end {
+  width: 70%; }
+
+.impress-enabled .best-practices {
+  width: 90%; }
+
+.impress-enabled .active .js {
+  width: 0; }
+
+.impress-enabled .active .html-css {
+  width: 0; }
+
+.impress-enabled .active .dev-env {
+  width: 0; }
+
+.impress-enabled .active .client-server {
+  width: 0; }
+
+.impress-enabled .active .back-end {
+  width: 0; }
+
+.impress-enabled .active .best-practices {
+  width: 0; }
+
+.impress-enabled .present .js {
+  -webkit-animation: 3s ease-out    0ms forwards js;
+          animation: 3s ease-out    0ms forwards js; }
+
+.impress-enabled .present .html-css {
+  -webkit-animation: 3s ease-out  200ms forwards html-css;
+          animation: 3s ease-out  200ms forwards html-css; }
+
+.impress-enabled .present .dev-env {
+  -webkit-animation: 3s ease-out  400ms forwards dev-env;
+          animation: 3s ease-out  400ms forwards dev-env; }
+
+.impress-enabled .present .client-server {
+  -webkit-animation: 3s ease-out  600ms forwards client-server;
+          animation: 3s ease-out  600ms forwards client-server; }
+
+.impress-enabled .present .back-end {
+  -webkit-animation: 3s ease-out  800ms forwards back-end;
+          animation: 3s ease-out  800ms forwards back-end; }
+
+.impress-enabled .present .best-practices {
+  -webkit-animation: 3s ease-out 1000ms forwards best-practices;
+          animation: 3s ease-out 1000ms forwards best-practices; }
+
+@-webkit-keyframes js {
+  0% {
+    width: 0; }
+  100% {
+    width: 95%; } }
+
+@keyframes js {
+  0% {
+    width: 0; }
+  100% {
+    width: 95%; } }
+
+@-webkit-keyframes html-css {
+  0% {
+    width: 0; }
+  100% {
+    width: 95%; } }
+
+@keyframes html-css {
+  0% {
+    width: 0; }
+  100% {
+    width: 95%; } }
+
+@-webkit-keyframes dev-env {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@keyframes dev-env {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes client-server {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@keyframes client-server {
+  0% {
+    width: 0; }
+  100% {
+    width: 80%; } }
+
+@-webkit-keyframes back-end {
+  0% {
+    width: 0; }
+  100% {
+    width: 70%; } }
+
+@keyframes back-end {
+  0% {
+    width: 0; }
+  100% {
+    width: 70%; } }
+
+@-webkit-keyframes best-practices {
+  0% {
+    width: 0; }
+  100% {
+    width: 90%; } }
+
+@keyframes best-practices {
+  0% {
+    width: 0; }
+  100% {
+    width: 90%; } }
+
 .contacts a {
-  font-size: 5rem;
-  margin: 30px; }
+  margin: 20px; }
+  .contacts a img {
+    height: 50px;
+    width: 50px; }
 
 @media screen and (max-width: 768px) {
   .contacts {
@@ -544,7 +712,5 @@ html, body {
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
-    .contacts a {
-      font-size: 7rem; } }
+            flex-direction: column; } }
 
