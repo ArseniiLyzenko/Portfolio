@@ -516,7 +516,13 @@ html, body {
   opacity: 0.3;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
-  font-size: 1.5rem; }
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.5rem;
+  overflow: auto; }
+
+.impress-enabled .step:not(#overview) {
+  background: #313131; }
 
 .impress-enabled .step.active {
   opacity: 1; }
