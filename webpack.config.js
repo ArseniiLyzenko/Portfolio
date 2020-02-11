@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: ["./src/libraries/impress.js", "./src/index.js"],
+  entry: ["./src/index.js"],
   mode: 'development',
   devServer: {
     contentBase: "./dist"
