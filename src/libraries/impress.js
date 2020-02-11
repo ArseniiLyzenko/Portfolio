@@ -3349,10 +3349,10 @@
                         ( target !== document.documentElement ) ) {
                     target = target.parentNode;
                 }
-
-                if ( api.goto( target ) ) {
-                    event.preventDefault();
-                }
+                //---COMMENTED TO TURN OFF FUNCTIONALITY---
+                // if ( api.goto( target ) ) {
+                //     event.preventDefault();
+                // }
             }
             catch ( err ) {
 

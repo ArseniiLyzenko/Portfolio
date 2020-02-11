@@ -1,7 +1,11 @@
 .contacts {
   a {
-    font-size: 5rem;
-    margin: 30px;
+    margin: 20px;
+
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }
 
@@ -10,9 +14,5 @@
   .contacts {
     display: flex;
     flex-direction: column;
-
-    a {
-      font-size: 7rem;
-    }
   }
 }

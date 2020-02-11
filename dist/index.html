@@ -11,12 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script defer src="bundle.js"></script>
-<!--    <style>-->
-<!--      .step {-->
-<!--        width: min(100vw, 100vh);-->
-<!--        height: min(100vw, 100vh);-->
-<!--      }-->
-<!--    </style>-->
+    <style>
+      .step {
+        width: min(100vw, 100vh);
+        height: min(100vw, 100vh);
+      }
+    </style>
   </head>
 
   <body class="impress-not-supported">
@@ -26,7 +26,7 @@
       <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
 
-    <div id="impress" data-perspective="0">
+    <div id="impress" data-perspective="1000">
 
       <div class="step" data-x="0" data-y="0" data-z="350">
         <p>Hi, I'm <span class="amplified">Arsenii Lyzenko</span></p>
@@ -36,8 +36,71 @@
         <p>I like create <br> <span class="amplified">Web Applications</span> <br> and <br> <span class="amplified">Websites</span></p>
       </div>
 
-      <div class="step" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90">
-        <p>(skills)</p>
+      <div class="step skills-slide" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90">
+<!--        <div class="left half">-->
+<!--          <p>JavaScript</p>-->
+<!--          <p>HTML/CSS</p>-->
+<!--          <p>Dev Environment</p>-->
+<!--          <p>Client-Server Communication</p>-->
+<!--          <p>Back-End</p>-->
+<!--          <p>Best Practices</p>-->
+<!--        </div>-->
+<!--        <div class="right half">-->
+<!--          <p>9/10</p>-->
+<!--          <p>9/10</p>-->
+<!--          <p>8/10</p>-->
+<!--          <p>8/10</p>-->
+<!--          <p>7/10</p>-->
+<!--          <p>9/10</p>-->
+<!--        </div>-->
+        <div class="skill-container">
+          <p class="title amplified">JavaScript</p>
+          <p class="details">React.js + TypeScript, Vue.js</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-filler js"></div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <p class="title amplified">HTML/CSS</p>
+          <p class="details">Sass/Scss, Bootstrap</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-filler html-css"></div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <p class="title amplified">Dev Environment</p>
+          <p class="details">NPM, Webpack, Git, Linux</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-filler dev-env"></div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <p class="title amplified">Client-Server Communication</p>
+          <p class="details">Ajax, RESTful API, Axios</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-filler client-server"></div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <p class="title amplified">Back-End</p>
+          <p class="details">Java, PHP, SQL, Firebase</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-filler back-end"></div>
+          </div>
+        </div>
+
+        <div class="skill-container">
+          <p class="title amplified">Best Practices</p>
+          <p class="details">OOP, DRY, SOLID, SEO principles</p>
+          <div class="skill-bar-container">
+            <div class="skill-bar-filler best-practices"></div>
+          </div>
+        </div>
+
       </div>
 
       <div class="step" data-x="0" data-y="-350" data-z="0" data-rotate-x="90" data-rotate-z="-90">
@@ -55,14 +118,13 @@
 
       <div id="overview" class="step contacts" data-x="1500" data-y="500" data-z="0" data-scale="5">
         <a target="_blank" rel="noopener noreferrer" href="mailto:arseniismart@gmail.com">
-          <img src="at-solid.svg" alt="Email" width="100" height="100">
-<!--          <object data="at-solid.svg" type="image/svg+xml"></object>-->
+          <img src="at-solid.svg" alt="Email">
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/PticaGovorun">
-          <img src="github-brands.svg" alt="GitHub" width="100" height="100">
+          <img src="github-brands.svg" alt="GitHub">
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arseniilyzenko">
-          <img src="linkedin-brands.svg" alt="LinkedIn" width="100" height="100">
+          <img src="linkedin-brands.svg" alt="LinkedIn">
         </a>
       </div>
     </div>
