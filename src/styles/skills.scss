@@ -2,7 +2,8 @@
   .skills-slide {
     flex-direction: column;
 
-    font-size: 1rem;
+    //font-size: 1rem;
+    text-align: center;
 
     .skill-container {
       display: flex;
@@ -18,18 +19,22 @@
       }
 
       .skill-bar-container {
-        width: 300px;
-        height: 12px;
+        width: 400px;
+        height: 15px;
 
         margin: 10px 0 0 0;
-
-        border: 1px solid white;
+        $color: #c1c1c1;
+        border: 1px solid $color;
         border-radius: 3px;
 
-        .skill-bar-filler {
-          background-color: #ffffff;
-
+        .value {
           height: 100%;
+
+          .skill-bar-filler {
+            background-color: $color;
+
+            height: 100%;
+          }
         }
       }
     }
@@ -58,12 +63,12 @@
   //  .best-practices { animation: 3s ease-out 1000ms forwards reverse best-practices; }
   //}
 
-  .js             { width: 95%; }
-  .html-css       { width: 95%; }
-  .dev-env        { width: 80%; }
-  .client-server  { width: 80%; }
-  .back-end       { width: 70%; }
-  .best-practices { width: 90%; }
+  //.js             { width: 100%; }
+  //.html-css       { width: 95%; }
+  //.dev-env        { width: 80%; }
+  //.client-server  { width: 80%; }
+  //.back-end       { width: 70%; }
+  //.best-practices { width: 90%; }
 
   .active {
     .js             { width: 0; }
@@ -75,12 +80,12 @@
   }
 
   .present {
-    .js             { animation: 3s ease-out    0ms forwards js;             }
-    .html-css       { animation: 3s ease-out  200ms forwards html-css;       }
-    .dev-env        { animation: 3s ease-out  400ms forwards dev-env;        }
-    .client-server  { animation: 3s ease-out  600ms forwards client-server;  }
-    .back-end       { animation: 3s ease-out  800ms forwards back-end;       }
-    .best-practices { animation: 3s ease-out 1000ms forwards best-practices; }
+    .js             { animation: 3s    0ms forwards fill-width ease-out; }
+    .html-css       { animation: 3s  200ms forwards fill-width ease-out; }
+    .dev-env        { animation: 3s  400ms forwards fill-width ease-out; }
+    .client-server  { animation: 3s  600ms forwards fill-width ease-out; }
+    .back-end       { animation: 3s  800ms forwards fill-width ease-out; }
+    .best-practices { animation: 3s 1000ms forwards fill-width ease-out; }
   }
 
   //.past {
@@ -93,32 +98,37 @@
   //}
 }
 
-@keyframes js {
+@keyframes fill-width {
   0%   { width: 0   }
-  100% { width: 95% }
+  100% { width: 100% }
 }
 
-@keyframes html-css {
-  0%   { width: 0   }
-  100% { width: 95% }
-}
-
-@keyframes dev-env {
-  0%   { width: 0   }
-  100% { width: 80% }
-}
-
-@keyframes client-server {
-  0%   { width: 0   }
-  100% { width: 80% }
-}
-
-@keyframes back-end {
-  0%   { width: 0   }
-  100% { width: 70% }
-}
-
-@keyframes best-practices {
-  0%   { width: 0   }
-  100% { width: 90% }
-}
+//@keyframes js {
+//  0%   { width: 0   }
+//  100% { width: 100% }
+//}
+//
+//@keyframes html-css {
+//  0%   { width: 0   }
+//  100% { width: 95% }
+//}
+//
+//@keyframes dev-env {
+//  0%   { width: 0   }
+//  100% { width: 80% }
+//}
+//
+//@keyframes client-server {
+//  0%   { width: 0   }
+//  100% { width: 80% }
+//}
+//
+//@keyframes back-end {
+//  0%   { width: 0   }
+//  100% { width: 70% }
+//}
+//
+//@keyframes best-practices {
+//  0%   { width: 0   }
+//  100% { width: 90% }
+//}

@@ -28,80 +28,136 @@
 
     <div id="impress" data-perspective="1000">
 
-      <div class="step" data-x="0" data-y="0" data-z="350">
+      <div class="step" data-x="0" data-y="0" data-z="500">
         <p>Hi, I'm <span class="amplified">Arsenii Lyzenko</span></p>
       </div>
 
-      <div class="step slide-2" data-x="350" data-y="0" data-z="0" data-rotate-y="90">
+      <div class="step slide-2" data-x="500" data-y="0" data-z="0" data-rotate-y="90">
         <p>I like create <br> <span class="amplified">Web Applications</span> <br> and <br> <span class="amplified">Websites</span></p>
       </div>
 
-      <div class="step skills-slide" data-x="0" data-y="350" data-z="0" data-rotate-x="-90" data-rotate-z="90">
+      <div class="step skills-slide" data-x="0" data-y="500" data-z="0" data-rotate-x="-90" data-rotate-z="90">
 
         <div class="skill-container">
           <p class="title amplified">JavaScript</p>
-          <p class="details">React.js + TypeScript, Vue.js</p>
+          <p class="details depressed">React.js + TypeScript, Vue.js</p>
           <div class="skill-bar-container">
-            <div class="skill-bar-filler js"></div>
+            <div class="value" style="width: 95%">
+              <div class="skill-bar-filler js"></div>
+            </div>
           </div>
         </div>
 
         <div class="skill-container">
           <p class="title amplified">HTML/CSS</p>
-          <p class="details">Sass/Scss, Bootstrap</p>
+          <p class="details depressed">Sass/Scss, Resposive Design, Bootstrap</p>
           <div class="skill-bar-container">
-            <div class="skill-bar-filler html-css"></div>
+            <div class="value" style="width: 95%">
+              <div class="skill-bar-filler html-css"></div>
+            </div>
           </div>
         </div>
 
         <div class="skill-container">
           <p class="title amplified">Dev Environment</p>
-          <p class="details">NPM, Webpack, Git, Linux</p>
+          <p class="details depressed">NPM, Webpack, Git, Linux</p>
           <div class="skill-bar-container">
-            <div class="skill-bar-filler dev-env"></div>
+            <div class="value" style="width: 80%">
+              <div class="skill-bar-filler dev-env"></div>
+            </div>
           </div>
         </div>
 
         <div class="skill-container">
           <p class="title amplified">Client-Server Communication</p>
-          <p class="details">Ajax, RESTful API, Axios</p>
+          <p class="details depressed">Ajax, RESTful API, Axios</p>
           <div class="skill-bar-container">
-            <div class="skill-bar-filler client-server"></div>
+            <div class="value" style="width: 80%">
+              <div class="skill-bar-filler client-server"></div>
+            </div>
           </div>
         </div>
 
         <div class="skill-container">
           <p class="title amplified">Back-End</p>
-          <p class="details">Java, PHP, SQL, Firebase</p>
+          <p class="details depressed">Java, PHP, SQL, Firebase</p>
           <div class="skill-bar-container">
-            <div class="skill-bar-filler back-end"></div>
+            <div class="value" style="width: 70%">
+              <div class="skill-bar-filler back-end"></div>
+            </div>
           </div>
         </div>
 
         <div class="skill-container">
           <p class="title amplified">Best Practices</p>
-          <p class="details">OOP, DRY, SOLID, SEO principles</p>
+          <p class="details depressed">OOP, DRY, SOLID, SEO principles</p>
           <div class="skill-bar-container">
-            <div class="skill-bar-filler best-practices"></div>
+            <div class="value" style="width: 90%">
+              <div class="skill-bar-filler best-practices"></div>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <div class="step" data-x="0" data-y="-350" data-z="0" data-rotate-x="90" data-rotate-z="-90">
-        <p>(Education)</p>
-        <p>Two blocks [ ] [ ]</p>
+      <div class="step education-slide" data-x="0" data-y="-500" data-z="0" data-rotate-x="90" data-rotate-z="-90">
+        <h3 class="title amplified">Bachelor in Computer Science</h3>
+        <span class="equal-sign amplified">=</span>
+        <div class="university">
+          <p class="name">City University of New York</p>
+          <p class="details depressed">GPA 3.5/4.0</p>
+        </div>
+        <span class="plus-sign amplified">+</span>
+        <div class="university">
+          <p class="name">National Technical University of Ukraine</p>
+        </div>
       </div>
 
-      <div class="step" data-x="-350" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180">
-        <p>(Experience)</p>
+      <div class="step projects-slide" data-x="-500" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180">
+
+        <div class="project">
+          <h3 class="title amplified">
+            <a target="_blank" rel="noopener noreferrer"
+               href="https://irregular-verbs-challenge.com/">
+              Irregular Verbs Challenge
+            </a>
+          </h3>
+          <p class="description depressed delay-0">
+            Developed and debugged Single Page Web Application using JavaScript, HTML5 &
+            CSS3, PHP, MySQL, and AJAX (Update: now runs on Vue.js, Vuetify,
+            and Firebase) to assist ESL people in learning English irregular
+            verbs through a competitive word game.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3 class="title amplified">A Web Server</h3>
+          <p class="description depressed delay-200">
+            Set up an Apache webserver based on “Raspberry Pi” computer with supporting
+            MySQL and PHP for hosting Irregular Verbs Challenge project.
+          </p>
+        </div>
+
+        <div class="project">
+          <h3 class="title amplified">Bus-Tracker</h3>
+          <p class="description depressed delay-400">
+            Developing front-end for Single Page Web Application using Vue.js (Vue Router,
+            Vuex), RestAPI (Axios), to provide a transport business a tool to
+            keep its accounting.
+          </p>
+        </div>
+
+        <a
+            class="other"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/PticaGovorun">
+          ..and other works
+        </a>
+
       </div>
 
-      <div class="step" data-x="0" data-y="0" data-z="-350" data-rotate-y="-180" data-rotate-z="-180">
-        <p>(Projects) and links?</p>
-      </div>
-
-      <div id="overview" class="step contacts" data-x="1500" data-y="500" data-z="0" data-scale="5">
+      <div class="step contacts-slide" data-x="0" data-y="0" data-z="-500" data-rotate-y="-180" data-rotate-z="-180">
         <a target="_blank" rel="noopener noreferrer" href="mailto:arseniismart@gmail.com">
           <img src="at-solid.svg" alt="Email">
         </a>
@@ -112,6 +168,10 @@
           <img src="linkedin-brands.svg" alt="LinkedIn">
         </a>
       </div>
+
+<!--      <div id="overview" class="step contacts" data-x="1500" data-y="500" data-z="0" data-scale="5">-->
+<!--        -->
+<!--      </div>-->
     </div>
 
     <div class="hint"></div>

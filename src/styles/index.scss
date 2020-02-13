@@ -1,10 +1,12 @@
 @import "~normalize-scss/sass/normalize/import-now";
 
+@import "variables";
+
 html, body {
   background: black;
 
   font-family: 'trebuchet ms', verdana, arial;
-  color: #acacac;
+  color: $normal;
 
   a {
     color: white;
@@ -23,11 +25,11 @@ html, body {
 .impress-enabled {
   .step > * {
     transition: opacity 1s;
-    text-align: center;
+    //text-align: center;
   }
 
   .step:not(.active) > * {
-    opacity: 0;
+    opacity: 0.2;
   }
 
   .step {
@@ -43,13 +45,13 @@ html, body {
     //width: 500px;
     //height: 500px;
 
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 
-    overflow: auto;
+    //overflow: auto;
   }
 
   .step:not(#overview) {
-    background: #313131;
+    //background: #313131;
   }
 
   .step.active {
@@ -59,10 +61,19 @@ html, body {
   .amplified {
     font-weight: bold;
     font-size: 1.5em;
-    color: white;
+    color: $amplified;
+  }
+
+  .depressed {
+    font-style: italic;
+    font-size: 0.8em;
+    color: $depressed;
   }
 }
 
 @import "slide-2";
 @import "skills";
+@import "education";
+@import "projects";
+
 @import "contacts";
