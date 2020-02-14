@@ -3,14 +3,18 @@
     flex-direction: column;
 
     text-align: center;
+    font-size: 2.5rem;
 
     .title {
       margin: 0;
+      //border: solid 2px $normal;
+      //padding: 20px;
     }
 
     .university {
-      padding: 30px;
-      border: solid 1px $normal;
+      //padding: 30px;
+      //border: solid 2px $normal;
+      //border-bottom: solid 2px $normal;
       //background-color: rgba(255, 255, 255, 0.16);
 
       .name {
@@ -20,6 +24,11 @@
       .details {
         margin: 20px 0 0 0;
       }
+    }
+
+    .sign {
+      margin: 20px;
+      font-size: 2em;
     }
 
     .equal-sign {

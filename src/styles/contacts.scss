@@ -2,11 +2,12 @@
 .impress-enabled {
   .contacts-slide {
     a {
-      margin: 30px;
+      margin: 40px;
 
       img {
-        height: 100px;
-        width: 100px;
+        $size: 125px;
+        height: $size;
+        width: $size;
       }
     }
   }

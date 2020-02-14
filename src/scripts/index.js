@@ -31,21 +31,22 @@ import "../libraries/impress/plugins/touch/touch";
 * */
 import "./hint";
 
-
-
 const impress_DOM_element = document.getElementById("impress");
-
-
 
 /*
 * Setting up width and height for impress.js
 * */
-// impress_DOM_element.dataset.height = window.innerHeight;
-// impress_DOM_element.dataset.width = window.innerWidth;
-impress_DOM_element.dataset.height = impress_DOM_element.dataset.width =
-  window.innerHeight > window.innerWidth
-    ? window.innerHeight
-    : window.innerWidth;
+
+if (window.innerWidth > 768) {
+  const coefficient = 1.5;
+  impress_DOM_element.dataset.height = window.innerHeight * coefficient;
+  impress_DOM_element.dataset.width = window.innerWidth * coefficient;
+}
+
+// impress_DOM_element.dataset.height = impress_DOM_element.dataset.width =
+//   window.innerHeight > window.innerWidth
+//     ? window.innerHeight
+//     : window.innerWidth;
 
 impress().init();
 

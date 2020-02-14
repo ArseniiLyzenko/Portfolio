@@ -2,7 +2,12 @@
 
 @import "variables";
 
+html {
+}
+
 html, body {
+  box-sizing: border-box;
+
   background: black;
 
   font-family: 'trebuchet ms', verdana, arial;
@@ -12,6 +17,10 @@ html, body {
     color: white;
     text-decoration: none;
   }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 @import "hint";
@@ -40,10 +49,14 @@ html, body {
     opacity: 0.3;
     transition: opacity 1s;
 
-    width: 100vw;
-    height: 100vh;
-    //width: 500px;
-    //height: 500px;
+    //width: 100vw;
+    //height: 100vh;
+    width: 900px;
+    height: 900px;
+    //width: 90vw;
+    //height: 90vw;
+
+    padding: 50px;
 
     font-size: 1.7rem;
 
@@ -52,6 +65,7 @@ html, body {
 
   .step:not(#overview) {
     //background: #313131;
+    border: solid 1px white;
   }
 
   .step.active {
@@ -71,6 +85,7 @@ html, body {
   }
 }
 
+@import "slide-1";
 @import "slide-2";
 @import "skills";
 @import "education";
