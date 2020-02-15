@@ -654,16 +654,16 @@ html, body {
   font-size: 2.5rem; }
   .impress-enabled .education-slide .title {
     margin: 0; }
-  .impress-enabled .education-slide .university .name {
-    margin: 0; }
-  .impress-enabled .education-slide .university .details {
-    margin: 20px 0 0 0; }
+  .impress-enabled .education-slide .university {
+    padding: 30px;
+    border: dashed 2px #acacac; }
+    .impress-enabled .education-slide .university .name {
+      margin: 0; }
+    .impress-enabled .education-slide .university .details {
+      margin: 20px 0 0 0; }
   .impress-enabled .education-slide .sign {
     margin: 20px;
     font-size: 2em; }
-  .impress-enabled .education-slide .equal-sign {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
 
 .impress-enabled .projects-slide {
   -webkit-box-orient: vertical;
