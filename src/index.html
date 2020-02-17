@@ -8,7 +8,7 @@
     <meta name="keywords"
           content="portfolio, Arsenii Lyzenko, web development, frontend engineer, frontend developer, JavaScript">
     <meta name="author" content="Arsenii Lyzenko">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="main.css">
     <script defer src="bundle.js"></script>
 <!--    <style>-->
@@ -26,23 +26,40 @@
       <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
 
-    <div id="impress" data-perspective="1000">
+    <div id="impress" data-perspective="1000" data-transition-duration="1000">
 
-      <div class="step slide-1" data-x="0" data-y="0" data-z="450">
+      <section class="step slide-1" data-x="0" data-y="0" data-z="450">
         <p>Hi, I'm <span class="amplified">Arsenii Lyzenko</span></p>
-      </div>
+      </section>
 
-      <div class="step slide-2" data-x="450" data-y="0" data-z="0" data-rotate-y="90">
-        <p>I like create <br> <span class="amplified">Web Applications</span> <br> and <br> <span class="amplified">Websites</span></p>
-      </div>
+<!--      <div class="step slide-2" data-x="450" data-y="0" data-z="0" data-rotate-y="90">-->
+<!--        <p>I like to create <br> <span class="amplified">Web Applications</span> <br> and <br> <span class="amplified">Websites</span></p>-->
+<!--      </div>-->
 
-      <div class="step skills-slide" data-x="0" data-y="450" data-z="0" data-rotate-x="-90" data-rotate-z="90">
+<!--      <div class="step slide-2" data-x="450" data-y="0" data-z="0" data-rotate-y="90">-->
+<!--        <p>I like to create <br> <span class="amplified">Web Applications</span> <br> and <br> <span class="amplified">Websites</span></p>-->
+<!--      </div>-->
+
+      <section class="step education-slide" data-x="450" data-y="0" data-z="0" data-rotate-y="90">
+        <h3 class="title amplified">Bachelor <br> in Computer Science</h3>
+        <span class="sign equal-sign amplified">=</span>
+        <div class="university">
+          <p class="name">City University of New York</p>
+          <p class="details depressed">GPA 3.5/4.0</p>
+        </div>
+        <span class="sign plus-sign amplified">+</span>
+        <div class="university">
+          <p class="name">National Technical University of Ukraine</p>
+        </div>
+      </section>
+
+      <section class="step skills-slide" data-x="0" data-y="450" data-z="0" data-rotate-x="-90" data-rotate-z="90">
 
         <div class="skill-container">
           <p class="title amplified">JavaScript</p>
           <p class="details depressed">React.js + TypeScript, Vue.js</p>
           <div class="skill-bar-container">
-            <div class="value" style="width: 95%">
+            <div class="value" style="width: 90%">
               <div class="skill-bar-filler js"></div>
             </div>
           </div>
@@ -52,7 +69,7 @@
           <p class="title amplified">HTML/CSS</p>
           <p class="details depressed">Sass/Scss, Resposive Design, Bootstrap</p>
           <div class="skill-bar-container">
-            <div class="value" style="width: 95%">
+            <div class="value" style="width: 90%">
               <div class="skill-bar-filler html-css"></div>
             </div>
           </div>
@@ -98,22 +115,33 @@
           </div>
         </div>
 
-      </div>
+      </section>
 
-      <div class="step education-slide" data-x="0" data-y="-450" data-z="0" data-rotate-x="90" data-rotate-z="-90">
-        <h3 class="title amplified">Bachelor <br> in Computer Science</h3>
-        <span class="sign equal-sign amplified">=</span>
-        <div class="university">
-          <p class="name">City University of New York</p>
-          <p class="details depressed">GPA 3.5/4.0</p>
+      <section class="step experience-slide" data-x="0" data-y="-450" data-z="0" data-rotate-x="90" data-rotate-z="-90">
+        <div class="internship">
+          <h3>
+            <span class="amplified">Front-End Developer Intern</span>
+            <br>
+            <span class="depressed">at InternSystems</span>
+          </h3>
+          <ul>
+            <li>Design and develop responsive web-pages using JavaScript, HTML, CSS, and Bootstrap.</li>
+            <li>Make suggestions for better solutions to problems.</li>
+          </ul>
         </div>
-        <span class="sign plus-sign amplified">+</span>
-        <div class="university">
-          <p class="name">National Technical University of Ukraine</p>
+        <div class="open-source">
+          <h3>
+            <span class="amplified">Open Source Contribution</span>
+            <br>
+            <span class="depressed">to JavaScript library Impress.js</span>
+          </h3>
+          <ul>
+            <li>Written a plugin to support navigation for touch devices, via swiping up/down, or tapping on the top/bottom edges of the screen.</li>
+          </ul>
         </div>
-      </div>
+      </section>
 
-      <div class="step projects-slide" data-x="-450" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="-180">
+      <section class="step projects-slide" data-x="-450" data-y="0" data-z="0" data-rotate-y="-90" data-rotate-z="0">
 
         <div class="project">
           <h3 class="title amplified">
@@ -125,7 +153,7 @@
           <p class="description depressed delay-0">
             Developed and debugged Single Page Web Application using JavaScript, HTML5 &
             CSS3, PHP, MySQL, and AJAX (Update: now runs on Vue.js, Vuetify,
-            and Firebase) to assist ESL people in learning English irregular
+            and Firebase) to assist ESL learners in learning English irregular
             verbs through a competitive word game.
           </p>
         </div>
@@ -142,7 +170,7 @@
           <h3 class="title amplified">Bus-Tracker</h3>
           <p class="description depressed delay-400">
             Developing front-end for Single Page Web Application using Vue.js (Vue Router,
-            Vuex), RestAPI (Axios), to provide a transport business a tool to
+            Vuex), RestAPI (Axios), to provide a transport business tool to
             keep its accounting.
           </p>
         </div>
@@ -155,23 +183,31 @@
           ..and other works
         </a>
 
-      </div>
+      </section>
 
-      <div class="step contacts-slide" data-x="0" data-y="0" data-z="-450" data-rotate-y="-180" data-rotate-z="-180">
+      <section class="step contacts-slide" data-x="0" data-y="0" data-z="-450" data-rotate-y="-180" data-rotate-z="-180">
         <a target="_blank" rel="noopener noreferrer" href="mailto:arseniismart@gmail.com">
           <img src="at-solid.svg" alt="Email">
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/PticaGovorun">
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ArseniiLyzenko">
           <img src="github-brands.svg" alt="GitHub">
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arseniilyzenko">
           <img src="linkedin-brands.svg" alt="LinkedIn">
         </a>
-      </div>
+      </section>
 
-<!--      <div id="overview" class="step contacts" data-x="1500" data-y="500" data-z="0" data-scale="5">-->
-<!--        -->
-<!--      </div>-->
+<!--      <section id="overview" class="step contacts-slide" data-x="1500" data-y="500" data-z="0" data-scale="3">-->
+<!--        <a target="_blank" rel="noopener noreferrer" href="mailto:arseniismart@gmail.com">-->
+<!--          <img src="at-solid.svg" alt="Email">-->
+<!--        </a>-->
+<!--        <a target="_blank" rel="noopener noreferrer" href="https://github.com/PticaGovorun">-->
+<!--          <img src="github-brands.svg" alt="GitHub">-->
+<!--        </a>-->
+<!--        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arseniilyzenko">-->
+<!--          <img src="linkedin-brands.svg" alt="LinkedIn">-->
+<!--        </a>-->
+<!--      </section>-->
     </div>
 
     <div class="hint"></div>

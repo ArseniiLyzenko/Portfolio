@@ -24,7 +24,8 @@ import "../libraries/impress/lib/gc";
 import "../libraries/impress/plugins/navigation/navigation";
 import "../libraries/impress/plugins/mobile/mobile";
 import "../libraries/impress/plugins/resize/resize";
-import "../libraries/impress/plugins/touch/touch";
+// import "../libraries/impress/plugins/touch/touch";
+import "../libraries/impress/plugins/touchY/touchY";
 
 /*
 * Scripts

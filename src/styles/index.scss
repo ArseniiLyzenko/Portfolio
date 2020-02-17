@@ -2,9 +2,6 @@
 
 @import "variables";
 
-html {
-}
-
 html, body {
   box-sizing: border-box;
 
@@ -15,7 +12,7 @@ html, body {
 
   a {
     color: white;
-    text-decoration: none;
+    //text-decoration: none;
   }
 }
 
@@ -74,21 +71,21 @@ html, body {
 
   .amplified {
     font-weight: bold;
-    font-size: 1.5em;
+    //font-size: 1.3em;
     color: $amplified;
   }
 
   .depressed {
     font-style: italic;
-    font-size: 0.8em;
+    //font-size: 0.9em;
     color: $depressed;
   }
 }
 
-@import "slide-1";
-@import "slide-2";
+@import "hi";
+//@import "slide-2";
 @import "skills";
 @import "education";
+@import "experience";
 @import "projects";
-
 @import "contacts";
