@@ -1,0 +1,145 @@
+.impress-enabled {
+  .skills-slide {
+    flex-direction: column;
+
+    font-size: 2rem;
+    text-align: center;
+
+    .skill-container:not(:first-child) {
+      margin-top: 30px;
+    }
+
+    .skill-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .title {
+        margin: 0;
+      }
+
+      .details {
+        margin: 5px 0 0 0;
+      }
+
+      .skill-bar-container {
+        width: 400px;
+        height: 20px;
+
+        margin: 10px 0 0 0;
+        $color: #e9e9e9;
+        border: 1px solid $color;
+        border-radius: 3px;
+
+        .value {
+          height: 100%;
+
+          .skill-bar-filler {
+            height: 100%;
+
+            background-color: $color;
+
+            color: black;
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+
+    .amplified {
+      font-size: 2.5rem;
+    }
+  }
+
+  //.js             { width: 0; }
+  //.html-css       { width: 0; }
+  //.dev-env        { width: 0; }
+  //.client-server  { width: 0; }
+  //.back-end       { width: 0; }
+  //.best-practices { width: 0; }
+
+  //.js             { animation: reverse 3s ease-out    0ms both js;             }
+  //.html-css       { animation: reverse 3s ease-out  200ms both html-css;       }
+  //.dev-env        { animation: reverse 3s ease-out  400ms both dev-env;        }
+  //.client-server  { animation: reverse 3s ease-out  600ms both client-server;  }
+  //.back-end       { animation: reverse 3s ease-out  800ms both back-end;       }
+  //.best-practices { animation: reverse 3s ease-out 1000ms both best-practices; }
+
+  //.past {
+  //  .js             { animation: 3s ease-out    0ms forwards reverse js;             }
+  //  .html-css       { animation: 3s ease-out  200ms forwards reverse html-css;       }
+  //  .dev-env        { animation: 3s ease-out  400ms forwards reverse dev-env;        }
+  //  .client-server  { animation: 3s ease-out  600ms forwards reverse client-server;  }
+  //  .back-end       { animation: 3s ease-out  800ms forwards reverse back-end;       }
+  //  .best-practices { animation: 3s ease-out 1000ms forwards reverse best-practices; }
+  //}
+
+  //.js             { width: 100%; }
+  //.html-css       { width: 95%; }
+  //.dev-env        { width: 80%; }
+  //.client-server  { width: 80%; }
+  //.back-end       { width: 70%; }
+  //.best-practices { width: 90%; }
+
+  .active {
+    .js             { width: 0; }
+    .html-css       { width: 0; }
+    .dev-env        { width: 0; }
+    .client-server  { width: 0; }
+    .back-end       { width: 0; }
+    .best-practices { width: 0; }
+  }
+
+  .present {
+    .js             { animation: 3s    0ms forwards fill-width ease-out; }
+    .html-css       { animation: 3s  200ms forwards fill-width ease-out; }
+    .dev-env        { animation: 3s  400ms forwards fill-width ease-out; }
+    .client-server  { animation: 3s  600ms forwards fill-width ease-out; }
+    .back-end       { animation: 3s  800ms forwards fill-width ease-out; }
+    .best-practices { animation: 3s 1000ms forwards fill-width ease-out; }
+  }
+
+  //.past {
+  //  .js             { animation:             js 3s ease-out    0ms forwards reverse; }
+  //  .html-css       { animation:       html-css 3s ease-out  200ms forwards reverse; }
+  //  .dev-env        { animation:        dev-env 3s ease-out  400ms forwards reverse; }
+  //  .client-server  { animation:  client-server 3s ease-out  600ms forwards reverse; }
+  //  .back-end       { animation:       back-end 3s ease-out  800ms forwards reverse; }
+  //  .best-practices { animation: best-practices 3s ease-out 1000ms forwards reverse; }
+  //}
+}
+
+@keyframes fill-width {
+  0%   { width: 0   }
+  100% { width: 100% }
+}
+
+//@keyframes js {
+//  0%   { width: 0   }
+//  100% { width: 100% }
+//}
+//
+//@keyframes html-css {
+//  0%   { width: 0   }
+//  100% { width: 95% }
+//}
+//
+//@keyframes dev-env {
+//  0%   { width: 0   }
+//  100% { width: 80% }
+//}
+//
+//@keyframes client-server {
+//  0%   { width: 0   }
+//  100% { width: 80% }
+//}
+//
+//@keyframes back-end {
+//  0%   { width: 0   }
+//  100% { width: 70% }
+//}
+//
+//@keyframes best-practices {
+//  0%   { width: 0   }
+//  100% { width: 90% }
+//}

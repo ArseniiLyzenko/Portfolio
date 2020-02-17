@@ -1,0 +1,66 @@
+.impress-enabled {
+  .experience-slide {
+    flex-direction: column;
+
+    font-size: 2rem;
+
+    .internship,
+    .open-source {
+      flex-grow: 1;
+
+      width: 100%;
+
+      h3 {
+        //display: inline-block;
+        text-align: right;
+      }
+
+      ul {
+        li {
+          margin: 20px 0;
+        }
+      }
+    }
+
+    .amplified {
+      font-size: 3.5rem;
+    }
+  }
+
+  //.active.experience-slide {
+  //  .internship,
+  //  .open-source {
+  //    ul {
+  //      li {
+  //        opacity: 0;
+  //      }
+  //    }
+  //  }
+  //}
+  //
+  //.present.experience-slide {
+  //  .internship,
+  //  .open-source {
+  //    ul {
+  //      li {
+  //        animation: rotateInUpLeft ease-out forwards;
+  //        animation-duration: 1s;
+  //      }
+  //    }
+  //  }
+  //}
+}
+
+@keyframes rotateInUpLeft {
+  from {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
