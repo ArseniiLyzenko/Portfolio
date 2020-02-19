@@ -41,13 +41,38 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|gif|html)$/i,
+        test: /\.(png|jpg|gif|html|webmanifest|ico)$/i,
         // test: /\.(png|jpg|gif)$/i,
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]'
+            }
+          },
+        ],
+      },
+      // {
+      //   test: /\.html$/i,
+      //   // test: /\.(png|jpg|gif)$/i,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         name: '[name].[ext]'
+      //       }
+      //     },
+      //   ],
+      // },
+      {
+        test: /\.svg$/i,
+        // test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'icons',
             }
           },
         ],
