@@ -62,7 +62,7 @@ html, body {
 
   .step:not(#overview) {
     //background: #313131;
-    border: solid 1px white;
+    border: solid 2px white;
   }
 
   .step.active {
@@ -78,14 +78,14 @@ html, body {
   .depressed {
     font-style: italic;
     //font-size: 0.9em;
-    color: $depressed;
+    //color: $depressed;
   }
 }
 
-@import "hi";
-//@import "slide-2";
-@import "skills";
-@import "education";
-@import "experience";
-@import "projects";
-@import "contacts";
+@import "slides/hi";
+//@import "slides/slide-2";
+@import "slides/skills";
+@import "slides/education";
+@import "slides/experience";
+@import "slides/projects";
+@import "slides/contacts";

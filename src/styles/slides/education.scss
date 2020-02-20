@@ -7,13 +7,19 @@
 
     .title {
       margin: 0;
-      //border: solid 2px $normal;
-      //padding: 20px;
+      border: solid 2px $amplified;
+      padding: 40px;
+    }
+
+    .line {
+      height: 100px;
+      border-left: solid 2px $amplified;
     }
 
     .university {
       padding: 30px;
-      border: dashed 2px $normal;
+      //margin: 100px 0 0 0;
+      border: solid 2px $amplified;
       //border-bottom: solid 2px $normal;
       //background-color: rgba(255, 255, 255, 0.16);
 
@@ -26,19 +32,19 @@
       }
     }
 
-    .sign {
-      margin: 20px;
-      font-size: 2em;
-    }
+    //.sign {
+    //  margin: 20px;
+    //  font-size: 2em;
+    //}
 
-    .equal-sign {
-      //transform: rotate(40deg);
-      //margin: 0 20px 0 0;
-    }
-
-    .plus-sign {
-
-    }
+    //.equal-sign {
+    //  //transform: rotate(40deg);
+    //  //margin: 0 20px 0 0;
+    //}
+    //
+    //.plus-sign {
+    //
+    //}
 
     .amplified {
       font-size: 4rem;

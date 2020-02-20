@@ -6,11 +6,12 @@
     <title>Arsenii Lyzenko</title>
     <meta name="description" content="Arsenii Lyzenko Portfolio">
     <meta name="keywords"
-          content="portfolio, Arsenii Lyzenko, web development, frontend engineer, frontend developer, JavaScript">
+          content="portfolio, Arsenii Lyzenko, web development, frontend engineer, frontend developer, JavaScript, html, css, software, programmer">
     <meta name="author" content="Arsenii Lyzenko">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="main.css">
     <script defer src="bundle.js"></script>
+    <meta name="google-site-verification" content="UMbhglgvjLHf8h7xejZL-c8P2NdLU-53jltDfU9saNk"/>
   </head>
 
   <body class="impress-not-supported">
@@ -28,12 +29,12 @@
 
       <section class="step education-slide" data-x="450" data-y="0" data-z="0" data-rotate-y="90">
         <h3 class="title amplified">Bachelor <br> in Computer Science</h3>
-        <span class="sign equal-sign amplified">=</span>
+        <div class="line"></div>
         <div class="university">
           <p class="name">City University of New York</p>
           <p class="details depressed">GPA 3.5/4.0</p>
         </div>
-        <span class="sign plus-sign amplified">+</span>
+        <div class="line"></div>
         <div class="university">
           <p class="name">National Technical University of Ukraine</p>
         </div>
@@ -42,8 +43,10 @@
       <section class="step skills-slide" data-x="0" data-y="450" data-z="0" data-rotate-x="-90" data-rotate-z="90">
 
         <div class="skill-container">
-          <p class="title amplified">JavaScript</p>
-          <p class="details depressed">React.js + TypeScript, Vue.js</p>
+          <div class="description">
+            <p class="title amplified">JavaScript</p>
+            <p class="details depressed">React.js + TypeScript, <br> Vue.js</p>
+          </div>
           <div class="skill-bar-container">
             <div class="value" style="width: 90%">
               <div class="skill-bar-filler js"></div>
@@ -52,8 +55,9 @@
         </div>
 
         <div class="skill-container">
-          <p class="title amplified">HTML/CSS</p>
-          <p class="details depressed">Sass/Scss, Resposive Design, Bootstrap</p>
+          <div class="description"><p class="title amplified">HTML/CSS</p>
+            <p class="details depressed">Sass/Scss, Resposive Design,
+                                         Bootstrap</p></div>
           <div class="skill-bar-container">
             <div class="value" style="width: 90%">
               <div class="skill-bar-filler html-css"></div>
@@ -62,8 +66,8 @@
         </div>
 
         <div class="skill-container">
-          <p class="title amplified">Dev Environment</p>
-          <p class="details depressed">NPM, Webpack, Git, Linux</p>
+          <div class="description"><p class="title amplified">Dev Environment</p>
+            <p class="details depressed">NPM, Webpack, Git, <br> Linux</p></div>
           <div class="skill-bar-container">
             <div class="value" style="width: 80%">
               <div class="skill-bar-filler dev-env"></div>
@@ -72,8 +76,8 @@
         </div>
 
         <div class="skill-container">
-          <p class="title amplified">Client-Server Communication</p>
-          <p class="details depressed">Ajax, RESTful API, Axios</p>
+          <div class="description"><p class="title amplified">Client-Server</p>
+            <p class="details depressed">Ajax, RESTful API, <br> Axios</p></div>
           <div class="skill-bar-container">
             <div class="value" style="width: 80%">
               <div class="skill-bar-filler client-server"></div>
@@ -82,21 +86,22 @@
         </div>
 
         <div class="skill-container">
-          <p class="title amplified">Back-End</p>
-          <p class="details depressed">Java, PHP, SQL, Firebase</p>
+          <div class="description"><p class="title amplified">Best Practices</p>
+            <p class="details depressed">OOP, DRY, SOLID, <br> SEO principles</p>
+          </div>
           <div class="skill-bar-container">
-            <div class="value" style="width: 70%">
-              <div class="skill-bar-filler back-end"></div>
+            <div class="value" style="width: 90%">
+              <div class="skill-bar-filler best-practices"></div>
             </div>
           </div>
         </div>
 
         <div class="skill-container">
-          <p class="title amplified">Best Practices</p>
-          <p class="details depressed">OOP, DRY, SOLID, SEO principles</p>
+          <div class="description"><p class="title amplified">Back-End</p>
+            <p class="details depressed">Java, PHP, SQL, <br> Firebase</p></div>
           <div class="skill-bar-container">
-            <div class="value" style="width: 90%">
-              <div class="skill-bar-filler best-practices"></div>
+            <div class="value" style="width: 70%">
+              <div class="skill-bar-filler back-end"></div>
             </div>
           </div>
         </div>
@@ -131,8 +136,7 @@
 
         <div class="project">
           <h3 class="title amplified">
-            <a target="_blank" rel="noopener noreferrer"
-               href="https://irregular-verbs-challenge.com/">
+            <a href="https://irregular-verbs-challenge.com/">
               Irregular Verbs Challenge
             </a>
           </h3>
@@ -161,25 +165,21 @@
           </p>
         </div>
 
-        <a
-            class="other"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/PticaGovorun">
+        <a class="other" href="https://github.com/PticaGovorun">
           ..and other works
         </a>
 
       </section>
 
       <section class="step contacts-slide" data-x="0" data-y="0" data-z="-450" data-rotate-y="-180" data-rotate-z="-180">
-        <a target="_blank" rel="noopener noreferrer" href="mailto:arseniismart@gmail.com">
-          <img src="at-solid.svg" alt="Email">
+        <a href="mailto:arseniismart@gmail.com">
+          <img src="./icons/at-solid.svg" alt="Email">
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/ArseniiLyzenko">
-          <img src="github-brands.svg" alt="GitHub">
+        <a href="https://github.com/ArseniiLyzenko">
+          <img src="./icons/github-brands.svg" alt="GitHub">
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/arseniilyzenko">
-          <img src="linkedin-brands.svg" alt="LinkedIn">
+        <a href="https://www.linkedin.com/in/arseniilyzenko">
+          <img src="./icons/linkedin-brands.svg" alt="LinkedIn">
         </a>
       </section>
     </div>

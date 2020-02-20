@@ -24,19 +24,26 @@ import "../libraries/impress/lib/gc";
 import "../libraries/impress/plugins/navigation/navigation";
 import "../libraries/impress/plugins/mobile/mobile";
 import "../libraries/impress/plugins/resize/resize";
-// import "../libraries/impress/plugins/touch/touch";
-import "../libraries/impress/plugins/touchY/touchY";
+// import "../libraries/impress/plugins/touchY/touchY";
+import "../libraries/impress/plugins/touch/touch";
 
 /*
 * Scripts
 * */
 import "./hint";
 
-const impress_DOM_element = document.getElementById("impress");
+// import "../favicons/android-chrome-192x192.png";
+// import "../favicons/android-chrome-512x512.png";
+// import "../favicons/apple-touch-icon.png";
+// import "../favicons/favicon-16x16.png";
+// import "../favicons/favicon-32x32.png";
+import "../favicons/favicon.ico";
+// import "../favicons/site.webmanifest";
 
 /*
 * Setting up width and height for impress.js
 * */
+const impress_DOM_element = document.getElementById("impress");
 
 if (window.innerWidth > 768) {
   const coefficient = 1.5;
