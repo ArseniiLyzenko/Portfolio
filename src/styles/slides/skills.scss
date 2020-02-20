@@ -1,18 +1,25 @@
 .impress-enabled {
   .skills-slide {
-    flex-direction: column;
+    //flex-direction: column;
+    flex-wrap: wrap;
 
     font-size: 2rem;
     text-align: center;
 
     .skill-container:not(:first-child) {
-      margin-top: 30px;
+      //margin-top: 30px;
     }
 
     .skill-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
+
+      padding: 50px 0;
+
+      width: 50%;
+      height: 33%;
 
       .title {
         margin: 0;
@@ -23,12 +30,12 @@
       }
 
       .skill-bar-container {
-        width: 400px;
-        height: 20px;
+        width: 340px;
+        height: 25px;
 
         margin: 10px 0 0 0;
-        $color: #e9e9e9;
-        border: 1px solid $color;
+        $color: #ffffff;
+        border: 2px solid $color;
         border-radius: 3px;
 
         .value {
@@ -47,7 +54,11 @@
     }
 
     .amplified {
-      font-size: 2.5rem;
+      font-size: 3rem;
+    }
+
+    .depressed {
+      font-size: 2rem;
     }
   }
 
@@ -86,8 +97,8 @@
     .html-css       { width: 0; }
     .dev-env        { width: 0; }
     .client-server  { width: 0; }
-    .back-end       { width: 0; }
     .best-practices { width: 0; }
+    .back-end       { width: 0; }
   }
 
   .present {
@@ -95,8 +106,8 @@
     .html-css       { animation: 3s  200ms forwards fill-width ease-out; }
     .dev-env        { animation: 3s  400ms forwards fill-width ease-out; }
     .client-server  { animation: 3s  600ms forwards fill-width ease-out; }
-    .back-end       { animation: 3s  800ms forwards fill-width ease-out; }
-    .best-practices { animation: 3s 1000ms forwards fill-width ease-out; }
+    .best-practices { animation: 3s  800ms forwards fill-width ease-out; }
+    .back-end       { animation: 3s 1000ms forwards fill-width ease-out; }
   }
 
   //.past {
