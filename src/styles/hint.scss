@@ -82,9 +82,9 @@
       into its correct position and after that we fade it in with opacity
       transition.
   */
-  -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
-  -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
-  -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
-  -o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
-  transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+  -webkit-transition: opacity 1s 2s, -webkit-transform 0.5s 2s;
+  -moz-transition:    opacity 1s 2s,    -moz-transform 0.5s 2s;
+  -ms-transition:     opacity 1s 2s,     -ms-transform 0.5s 2s;
+  -o-transition:      opacity 1s 2s,      -o-transform 0.5s 2s;
+  transition:         opacity 1s 2s,         transform 0.5s 2s;
 }
