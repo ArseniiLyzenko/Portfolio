@@ -102,12 +102,12 @@
   }
 
   .present {
-    .js             { animation: 3s    0ms forwards fill-width ease-out; }
-    .html-css       { animation: 3s  200ms forwards fill-width ease-out; }
-    .dev-env        { animation: 3s  400ms forwards fill-width ease-out; }
-    .client-server  { animation: 3s  600ms forwards fill-width ease-out; }
-    .best-practices { animation: 3s  800ms forwards fill-width ease-out; }
-    .back-end       { animation: 3s 1000ms forwards fill-width ease-out; }
+    .js             { animation: 2s    0ms forwards fill-width ease-out; }
+    .html-css       { animation: 2s  200ms forwards fill-width ease-out; }
+    .dev-env        { animation: 2s  400ms forwards fill-width ease-out; }
+    .client-server  { animation: 2s  600ms forwards fill-width ease-out; }
+    .best-practices { animation: 2s  800ms forwards fill-width ease-out; }
+    .back-end       { animation: 2s 1000ms forwards fill-width ease-out; }
   }
 
   //.past {
