@@ -2,12 +2,14 @@
 
 @import "variables";
 
+@import "hint";
+
 html, body {
   box-sizing: border-box;
 
   background: black;
 
-  font-family: 'trebuchet ms', verdana, arial;
+  font-family: 'trebuchet ms', verdana, arial, serif;
   color: $normal;
 
   a {
@@ -19,8 +21,6 @@ html, body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-@import "hint";
 
 .impress-supported {
   .fallback-message {
